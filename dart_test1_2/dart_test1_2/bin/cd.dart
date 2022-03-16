@@ -8,6 +8,6 @@ class CompactDisc extends Barang {
   }
 
   get Data {
-    return ('ID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nArtist: $Artist');
+    return ('\n\nID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nArtist: $Artist');
   }
 }

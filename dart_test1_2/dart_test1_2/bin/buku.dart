@@ -10,7 +10,7 @@ class BukuBiasa extends Barang {
     this.Penulis = Penulis;
   }
   get Data {
-    return ('ID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nISBN: $ISBN\nPenulis: $Penulis');
+    return ('\n\nID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nISBN: $ISBN\nPenulis: $Penulis');
   }
 }
 
@@ -22,6 +22,6 @@ class TravelGuide extends BukuBiasa {
     this.Negara = Negara;
   }
   get Data {
-    return ('ID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nISBN: $ISBN\nPenulis: $Penulis\nNegara: $Negara');
+    return ('\n\nID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nISBN: $ISBN\nPenulis: $Penulis\nNegara: $Negara');
   }
 }
