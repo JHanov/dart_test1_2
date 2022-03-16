@@ -2,12 +2,13 @@ import 'barang.dart';
 
 class CompactDisc extends Barang {
   String Artist = 'Artist';
-  CompactDisc(String ID, String Judul, int Harga, String Desc, String Artist)
-      : super(ID, Judul, Harga, Desc) {
+  CompactDisc(String ID, String Judul, int Harga, String Desc, String Artist,
+      String Location)
+      : super(ID, Judul, Harga, Desc, Location) {
     this.Artist = Artist;
   }
 
-  get Data {
-    return ('\n\nID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nArtist: $Artist');
-  }
+  @override
+  // TODO: implement Data
+  get Data => super.Data + '\nArtist: $Artist';
 }

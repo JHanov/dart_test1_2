@@ -1,10 +1,13 @@
+import 'dart:io';
+
 class Barang {
   String ID = 'id';
   String Judul = 'Judul';
   int Harga = 200000;
   String Desc = '-';
+  String Location = '-';
 
-  Barang(this.ID, this.Judul, this.Harga, this.Desc);
+  Barang(this.ID, this.Judul, this.Harga, this.Desc, this.Location);
   set judul(String dtJudul) {
     Judul = dtJudul;
   }
@@ -28,4 +31,14 @@ class Barang {
   }
 
   String get desc => this.Desc;
+
+  set location(String dtLocation) {
+    Location = dtLocation;
+  }
+
+  String get location => this.Location;
+
+  get Data {
+    return ('\n\nObject: Compact Disc\n--------------------\nID: $ID\nJudul: $Judul\nDeskripsi: $Desc\nHarga: Rp.$Harga\nLokasi $Location');
+  }
 }
